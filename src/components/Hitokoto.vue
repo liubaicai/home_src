@@ -1,13 +1,10 @@
 <template>
   <div
     class="hitokoto cards"
-    v-show="!store.musicOpenState"
-    @mouseenter="openMusicShow = true"
-    @mouseleave="openMusicShow = false"
     @click.stop
   >
     <!-- 打开音乐面板 -->
-    <Transition name="el-fade-in-linear">
+    <!-- <Transition name="el-fade-in-linear">
       <div
         class="open-music"
         v-show="openMusicShow && store.musicIsOk"
@@ -16,7 +13,7 @@
         <music-menu theme="filled" size="18" fill="#efefef" />
         <span>打开音乐播放器</span>
       </div>
-    </Transition>
+    </Transition> -->
     <!-- 一言内容 -->
     <Transition name="el-fade-in-linear" mode="out-in">
       <div :key="hitokotoData.text" class="content" @click="updateHitokoto">
@@ -40,8 +37,8 @@ const openMusicShow = ref(false);
 
 // 一言数据
 const hitokotoData = reactive({
-  text: "这里应该显示一句话",
-  from: "無名",
+  text: "苟利国家生死以，岂因福祸避趋之。",
+  from: "故人",
 });
 
 // 获取一言数据
@@ -72,7 +69,7 @@ const updateHitokoto = () => {
 };
 
 onMounted(() => {
-  getHitokotoData();
+  // getHitokotoData();
 });
 </script>
 

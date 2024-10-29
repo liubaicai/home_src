@@ -1,6 +1,6 @@
 <template>
   <div class="box cards" @mouseenter="closeShow = true" @mouseleave="closeShow = false">
-    <transition name="el-fade-in-linear">
+    <!-- <transition name="el-fade-in-linear">
       <close-one
         class="close"
         theme="filled"
@@ -19,7 +19,7 @@
         v-show="closeShow"
         @click="store.setOpenState = true"
       />
-    </transition>
+    </transition> -->
     <div class="content">
       <!-- 可在此处自定义任意内容 -->
       <TimeCapsule />

@@ -5,7 +5,7 @@
       <el-col :span="12">
         <div class="left">
           <Hitokoto />
-          <Music v-if="playerHasId" />
+          <!-- <Music v-if="playerHasId" /> -->
         </div>
       </el-col>
       <el-col :span="12">
@@ -21,7 +21,7 @@
               <span> {{ currentTime.hour }}:{{ currentTime.minute }}:{{ currentTime.second }}</span>
             </div>
           </div>
-          <Weather />
+          <!-- <Weather /> -->
         </div>
       </el-col>
     </el-row>
@@ -33,7 +33,7 @@ import { getCurrentTime } from "@/utils/getTime";
 import { mainStore } from "@/store";
 import Music from "@/components/Music.vue";
 import Hitokoto from "@/components/Hitokoto.vue";
-import Weather from "@/components/Weather.vue";
+// import Weather from "@/components/Weather.vue";
 
 const store = mainStore();
 
@@ -114,6 +114,7 @@ onBeforeUnmount(() => {
       justify-content: space-between;
       animation: fade 0.5s;
       .time {
+        margin-top: 24px;
         font-size: 1.1rem;
         text-align: center;
         .date {

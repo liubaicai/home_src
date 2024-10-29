@@ -1,37 +1,32 @@
 [
   {
+    "icon": "Home",
+    "name": "菜园子",
+    "link": "https://www.liubaicai.net/"
+  },
+  {
     "icon": "Blog",
-    "name": "博客",
-    "link": "https://blog.imsyy.top/"
+    "name": "博的客",
+    "link": "https://blog.liubaicai.net/"
   },
   {
-    "icon": "Cloud",
-    "name": "网盘",
-    "link": "https://pan.imsyy.top/"
+    "icon": "Image",
+    "name": "遛猫网",
+    "link": "http://www.6mao.wang/"
   },
   {
-    "icon": "CompactDisc",
-    "name": "音乐",
-    "link": "https://music.imsyy.top/"
+    "icon": "Image",
+    "name": "每日必应",
+    "link": "http://bing.liubaicai.net/"
   },
   {
     "icon": "Compass",
     "name": "起始页",
-    "link": "https://nav.imsyy.top/"
-  },
-  {
-    "icon": "Book",
-    "name": "网址集",
-    "link": "https://web.imsyy.top/"
+    "link": "https://home.liubaicai.net/"
   },
   {
     "icon": "Fire",
     "name": "今日热榜",
     "link": "https://hot.imsyy.top/"
-  },
-  {
-    "icon": "LaptopCode",
-    "name": "站点监测",
-    "link": "https://status.imsyy.top/"
   }
 ]

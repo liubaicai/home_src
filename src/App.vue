@@ -59,7 +59,7 @@ const getWidth = () => {
 const loadComplete = () => {
   nextTick(() => {
     // 欢迎提示
-    helloInit();
+    // helloInit();
     // 默哀模式
     checkDays();
   });

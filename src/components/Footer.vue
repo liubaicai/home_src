@@ -11,15 +11,15 @@
             -
           </span>
           {{ fullYear }}
-          <a :href="siteUrl">{{ siteAuthor }}</a>
+          <!-- <a :href="siteUrl">{{ siteAuthor }}</a> -->
         </span>
         <!-- 以下信息请不要修改哦 -->
-        <span class="hidden">
+        <!-- <span class="hidden">
           &amp;&nbsp;Made&nbsp;by
           <a :href="config.github" target="_blank">
             {{ config.author }}
           </a>
-        </span>
+        </span> -->
         <!-- 站点备案 -->
         <span>
           &amp;
@@ -44,7 +44,7 @@
 <script setup>
 import { MusicOne } from "@icon-park/vue-next";
 import { mainStore } from "@/store";
-import config from "@/../package.json";
+// import config from "@/../package.json";
 
 const store = mainStore();
 const fullYear = new Date().getFullYear();
@@ -56,16 +56,16 @@ const startYear = ref(
   import.meta.env.VITE_SITE_START.substring(0, 4) : null
 );
 const siteIcp = ref(import.meta.env.VITE_SITE_ICP);
-const siteAuthor = ref(import.meta.env.VITE_SITE_AUTHOR);
-const siteUrl = computed(() => {
-  const url = import.meta.env.VITE_SITE_URL;
-  if (!url) return "https://www.imsyy.top";
-  // 判断协议前缀
-  if (!url.startsWith("http://") && !url.startsWith("https://")) {
-    return "//" + url;
-  }
-  return url;
-});
+// const siteAuthor = ref(import.meta.env.VITE_SITE_AUTHOR);
+// const siteUrl = computed(() => {
+//   const url = import.meta.env.VITE_SITE_URL;
+//   if (!url) return "https://www.imsyy.top";
+//   // 判断协议前缀
+//   if (!url.startsWith("http://") && !url.startsWith("https://")) {
+//     return "//" + url;
+//   }
+//   return url;
+// });
 </script>
 
 <style lang="scss" scoped>
@@ -78,7 +78,7 @@ const siteUrl = computed(() => {
   line-height: 46px;
   text-align: center;
   z-index: 0;
-  font-size: 14px;
+  font-size: 12px;
   // 文字不换行
   word-break: keep-all;
   white-space: nowrap;
@@ -110,7 +110,7 @@ const siteUrl = computed(() => {
   &.blur {
     backdrop-filter: blur(10px);
     background: rgb(0 0 0 / 25%);
-    font-size: 16px;
+    font-size: 12px;
   }
   .fade-enter-active,
   .fade-leave-active {
